@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>JavaScriptにHTMLから値を渡す</h1>
+        <input type="text" id="my-text" value="さよなら">
+        <button id="my-button">値を取得</button>
+        <script>
+            const input = document.getElementById("my-text")
+            const button = document.getElementById("my-button")
+            console.log(button)
+            button.addEventListner("click", () => {
+                alert(input.value)
+            })
+        </script>
+    </body>
+</html>
